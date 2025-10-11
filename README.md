@@ -1,16 +1,11 @@
 Tienes razón, veo algunos problemas en el código. Aquí está la versión corregida:
 
 ```markdown
-# 👋 Hola, soy [TU NOMBRE]
+# 👋 Hola, soy Mauro
 
 <div align="center">
   
 ### 🌍 Nómada Digital | 💻 Democratizador de Tecnología Web | 🚀 Builder con Propósito
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](tu-linkedin)
-[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube)](tu-youtube)
-[![Website](https://img.shields.io/badge/Website-Visit-green?style=for-the-badge&logo=google-chrome)](tu-website)
-
 </div>
 
 ---
@@ -19,7 +14,8 @@ Tienes razón, veo algunos problemas en el código. Aquí está la versión corr
 
 > **"La tecnología debe empoderar, no excluir"**
 
-Ayudo a emprendedores crear presencia web profesional sin barreras económicas o técnicas. Construyo herramientas que democratizan el acceso a tecnología enterprise, porque creo que cada idea merece su oportunidad digital.
+Ayudo a emprendedores crear presencia web profesional sin barreras económicas o técnicas. Construyo herramientas que
+democratizan el acceso a tecnología enterprise, porque creo que cada idea merece su oportunidad digital.
 
 ```javascript
 const mision = {
@@ -35,7 +31,7 @@ const mision = {
 ## 🚀 En Qué Estoy Trabajando
 
 ### 🔨 Proyecto Principal
-**[Nombre de Tu Plataforma]** - Plataforma de landing pages que convierte
+**WebcrafiIA** - Plataforma de landing pages que convierte
 - 🎨 Templates profesionales sin diseñador
 - ⚡ Deploy en minutos, no semanas
 - 💰 Freemium model: Enterprise financia acceso gratuito
@@ -54,14 +50,13 @@ Documento todo el proceso de construcción:
 
 ### 🎓 Educación & Empowerment
 - **Workshops Gratuitos**: En cada ciudad que visito
-- **Office Hours**: Viernes pro-bono
 - **Tutoriales Públicos**: IA, No-code, Automatizaciones
 - **Templates Open Source**: Recursos descargables gratis
 
 ### 🌐 Desarrollo Web Accesible
 - **Sliding Scale Pricing**: Pagas según tu realidad
 - **Scholarship Program**: Acceso completo para founders sin recursos
-- **Pro-bono Fridays**: Desarrollo para causas sociales
+- **Pro-bono**: Desarrollo para causas sociales
 
 ---
 
@@ -75,14 +70,13 @@ Documento todo el proceso de construcción:
 ![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
 
 ### No-Code & Automation
-![Webflow](https://img.shields.io/badge/Webflow-4353FF?style=flat-square&logo=webflow&logoColor=white)
 ![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=flat-square&logo=zapier&logoColor=white)
 ![Airtable](https://img.shields.io/badge/Airtable-18BFFF?style=flat-square&logo=airtable&logoColor=white)
 ![Notion](https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white)
 
 ### IA & Productivity
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat-square&logo=openai&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude-181818?style=flat-square&logo=anthropic&logoColor=white)
+![Gemini](https://img.shields.io/badge/Claude-181818?style=flat-square&logo=anthropic&logoColor=white)
 
 ---
 
@@ -92,7 +86,7 @@ Documento todo el proceso de construcción:
 
 | 🎓 Personas Capacitadas | 🌍 Workshops Dados | 💻 Sitios Creados | 🤝 Proyectos Pro-Bono |
 |:---:|:---:|:---:|:---:|
-| **500+** | **20+** | **300+** | **15+** |
+| **150+** | **10+** | **30+** | **5+** |
 
 </div>
 
@@ -100,9 +94,8 @@ Documento todo el proceso de construcción:
 
 ## 🌍 Nómada con Propósito
 
-📍 **Actualmente en:** [Tu ubicación actual]  
-🗺️ **Ciudades visitadas:** [Número] países, [Número] ciudades  
-🎯 **Próximo destino:** [Próxima ciudad]
+📍 **Actualmente en:** Planeta Tierra  
+🗺️ **Ciudades visitadas:** [17] países, [75] ciudades  
 
 ### Por Qué Viajo
 - 🤝 Conectar comunidades tech globalmente
@@ -114,30 +107,21 @@ Documento todo el proceso de construcción:
 
 ## 📦 Recursos Gratuitos
 
-### 🎁 Templates & Components
-- **[Landing Page Starter Kit](link)** - Template completo para comenzar
-- **[Email Automation Workflows](link)** - Secuencias probadas
-- **[Conversion Copy Frameworks](link)** - Copywriting que funciona
-
-### 📚 Guías & Tutoriales
-- **[De Cero a Landing Page en 24h](link)**
-- **[IA para Founders: Workflow Completo](link)**
-- **[Automatizaciones que Ahorran 10h/Semana](link)**
-- **[No-Code Stack: De Idea a Producto](link)**
+Prximamente
 
 ---
 
 ## 🎥 Contenido Reciente
 
 ### 📹 Últimos Videos
-- [Video Title 1](link)
-- [Video Title 2](link)
-- [Video Title 3](link)
+- [Video Title 1](link) proximamente
+- [Video Title 2](link) proximamente
+- [Video Title 3](link) proximamente
 
 ### ✍️ Últimos Posts
-- [Post Title 1](link)
-- [Post Title 2](link)
-- [Post Title 3](link)
+- [Post Title 1](link) proximamente
+- [Post Title 2](link) proximamente
+- [Post Title 3](link) proximamente
 
 ---
 
@@ -155,11 +139,11 @@ Documento todo el proceso de construcción:
 - 💡 Tools que democratizan tecnología
 
 ### 📬 Contacto
-- 📧 Email: tu-email@example.com
-- 💼 LinkedIn: [Conéctate conmigo](tu-linkedin)
-- 🐦 Twitter: [@tu-handle](tu-twitter)
-- 📺 YouTube: [Mi Canal](tu-youtube)
-- 🌐 Website: [Visita mi sitio](tu-website)
+- 📧 Email: 
+- 💼 LinkedIn: [Conéctate conmigo](#)
+- 🐦 Twitter: [@tu-handle](#)
+- 📺 YouTube: [Mi Canal](#)
+- 🌐 Website: [Visita mi sitio](#)
 
 ---
 
@@ -185,29 +169,6 @@ class MiFilosofia:
 
 ---
 
-## 📈 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tu-username&show_icons=true&theme=radical)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tu-username&layout=compact&theme=radical)
-
-</div>
-
----
-
-## 🌟 Proyectos Destacados
-
-<div align="center">
-
-[![Repo 1](https://github-readme-stats.vercel.app/api/pin/?username=tu-username&repo=nombre-repo-1&theme=radical)](link-repo-1)
-[![Repo 2](https://github-readme-stats.vercel.app/api/pin/?username=tu-username&repo=nombre-repo-2&theme=radical)](link-repo-2)
-
-</div>
-
----
-
 ## 💭 Quote del Momento
 
 <div align="center">
@@ -220,11 +181,11 @@ class MiFilosofia:
 
 ## 🎯 Objetivos 2025
 
-- [ ] Capacitar 1,000+ emprendedores
-- [ ] Lanzar [Tu Plataforma] públicamente
-- [ ] 50 workshops gratuitos en 20 ciudades
-- [ ] 100 proyectos pro-bono completados
-- [ ] 5,000 sitios creados con la plataforma
+- [ ] Capacitar 200+ personas
+- [ ] Lanzar WebcraftAI públicamente
+- [ ] 10 workshops gratuitos en 10 ciudades
+- [ ] 10 proyectos pro-bono completados
+- [ ] 100 sitios creados con la plataforma
 - [ ] Establecer scholarship program permanente
 
 ---
@@ -239,13 +200,3 @@ class MiFilosofia:
 
 </div>
 ```
-
-## Principales correcciones:
-
-1. ✅ Eliminé el diagrama Mermaid (puede causar problemas de renderizado)
-2. ✅ Simplifiqué la sección "Nómada con Propósito" sin bloques de código
-3. ✅ Quité secciones que podían verse rotas (última actualización, buy me a coffee)
-4. ✅ Formato más limpio y compatible con todos los visualizadores de Markdown
-5. ✅ Eliminé caracteres especiales que causan problemas
-
-Esta versión es más estable y se verá bien en GitHub. ¿Quieres que simplifique aún más alguna sección?
