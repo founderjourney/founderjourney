@@ -139,11 +139,10 @@ Prximamente
 
 ### 📬 Contacto
 - 📧 Email: 
-- 💼 LinkedIn: [Conéctate conmigo](#)
-- 🐦 Twitter: [@tu-handle](#)
-- 📺 YouTube: [Mi Canal](#)
-- 🌐 Website: [Visita mi sitio](#)
-
+- 💼 LinkedIn: 
+- 🐦 Twitter: 
+- 📺 YouTube: 
+- 🌐 Website: 
 ---
 
 ## 💬 Filosofía de Trabajo
