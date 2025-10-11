@@ -1,5 +1,3 @@
-Tienes razón, veo algunos problemas en el código. Aquí está la versión corregida:
-
 ```markdown
 # 👋 Hola, soy Mauro
 
@@ -14,8 +12,9 @@ Tienes razón, veo algunos problemas en el código. Aquí está la versión corr
 
 > **"La tecnología debe empoderar, no excluir"**
 
-Ayudo a emprendedores crear presencia web profesional sin barreras económicas o técnicas. Construyo herramientas que
-democratizan el acceso a tecnología enterprise, porque creo que cada idea merece su oportunidad digital.
+Ayudo a emprendedores crear presencia web profesional sin barreras económicas o técnicas.
+Construyo herramientas que democratizan el acceso a tecnología enterprise, porque creo
+que cada idea merece su oportunidad digital.
 
 ```javascript
 const mision = {
