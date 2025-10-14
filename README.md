@@ -1,14 +1,11 @@
 ```markdown
-# 👋 Hola, soy Mauro
-
-<div align="center">
+ 👋 Hola, soy Mauro
   
-### 🌍 Nómada Digital | 💻 Democratizador de Tecnología Web | 🚀 Builder con Propósito
-</div>
+🌍 Nómada Digital | 💻 Democratizador de Tecnología Web | 🚀 Builder con Propósito
 
 ---
 
-## 🎯 Mi Misión
+🎯 Mi Misión
 
 > **"La tecnología debe empoderar, no excluir"**
 
