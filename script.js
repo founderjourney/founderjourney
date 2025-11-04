@@ -1,6 +1,7 @@
 // Gestión de enlaces personalizado tipo Linktree
 class LinkTreeManager {
     constructor() {
+        this.version = '1.1'; // Versión para controlar actualizaciones de datos
         this.links = [];
         this.socialLinks = {};
         this.analytics = {};
@@ -10,12 +11,24 @@ class LinkTreeManager {
     }
 
     init() {
+        this.checkVersion();
         this.loadData();
         this.renderLinks();
         this.setupEventListeners();
         this.loadSampleData();
         this.setupClickTracking();
         this.checkAuthStatus();
+    }
+
+    // Verificar la versión y limpiar datos si es necesario
+    checkVersion() {
+        const storedVersion = localStorage.getItem('linktree_version');
+        if (storedVersion !== this.version) {
+            localStorage.removeItem('linktree_links');
+            localStorage.removeItem('linktree_social');
+            localStorage.removeItem('linktree_analytics');
+            localStorage.setItem('linktree_version', this.version);
+        }
     }
 
     // Cargar datos del localStorage
@@ -51,59 +64,38 @@ class LinkTreeManager {
             this.links = [
                 {
                     id: Date.now() + 1,
-                    title: "🌐 WebcraftAI - Democratizando Web",
-                    url: "https://webcraftai.com",
-                    icon: "🌐",
-                    description: "Plataforma freemium - Enterprise financia acceso gratuito"
+                    title: "🚀 Digitaliza",
+                    url: "https://linkangri.vercel.app",
+                    icon: "🚀",
+                    description: "Digitaliza tu empresa con un agregador de enlaces"
                 },
                 {
                     id: Date.now() + 2,
-                    title: "🎓 Workshops 'Tech Sin Barreras'",
-                    url: "https://cal.com/mauro-workshops",
+                    title: "🎓 Entra en nuestros grupos/comunidades Digitaliza",
+                    url: "https://cal.com/founderjourney/workshops-tech-sin-barreras",
                     icon: "🎓",
                     description: "Educación tech accesible en cada ciudad que visito"
                 },
                 {
                     id: Date.now() + 3,
                     title: "💰 Sliding Scale Pricing - Consultoría",
-                    url: "https://cal.com/mauro-consultoria",
+                    url: "https://cal.com/founderjourney/sliding-scale",
                     icon: "💰",
                     description: "Pagas según tu realidad - IA & Web democratizada"
                 },
                 {
                     id: Date.now() + 4,
-                    title: "🆓 Templates & Recursos Gratuitos",
-                    url: "https://github.com/mauronomadatech",
-                    icon: "🆓",
+                    title: "💼 Proyectos y Portfolio",
+                    url: "https://github.com/founderjourney?tab=repositories",
+                    icon: "💼",
                     description: "Open source components y recursos descargables"
                 },
                 {
                     id: Date.now() + 5,
-                    title: "🤝 Pro-Bono Fridays",
-                    url: "https://forms.gle/probono-fridays",
-                    icon: "🤝",
-                    description: "Desarrollo gratuito para causas sociales"
-                },
-                {
-                    id: Date.now() + 6,
                     title: "📍 Nómada con Impacto",
-                    url: "https://nomadlist.com/@mauro",
+                    url: "https://calendar.google.com/calendar/u/2?cid=Z2xvYmFscGF0aGZpbmRlcmxsY0BnbWFpbC5jb20",
                     icon: "📍",
                     description: "Próximos destinos + meetups locales"
-                },
-                {
-                    id: Date.now() + 7,
-                    title: "🎬 Building in Public - YouTube",
-                    url: "https://youtube.com/@maurotechbuilder",
-                    icon: "🎬",
-                    description: "Documentando el proceso completo - wins y failures"
-                },
-                {
-                    id: Date.now() + 8,
-                    title: "🏆 Scholarship Program",
-                    url: "https://forms.gle/scholarship-program",
-                    icon: "🏆",
-                    description: "Acceso completo para founders sin recursos"
                 }
             ];
 
@@ -143,19 +135,43 @@ class LinkTreeManager {
             return;
         }
 
-        container.innerHTML = this.links.map(link => `
-            <a href="${link.url}" class="link-item" target="_blank" rel="noopener noreferrer" data-link-id="${link.id}">
-                <div class="link-content">
-                    <div class="link-icon">${link.icon}</div>
-                    <div class="link-text">
-                        <div class="link-title">${link.title}</div>
-                        ${link.description ? `<div class="link-description">${link.description}</div>` : ''}
-                        ${this.isAuthenticated && this.analytics[link.id] ? `<div class="link-stats">👆 ${this.analytics[link.id].clicks || 0} clicks</div>` : ''}
+        container.innerHTML = this.links.map(link => {
+            if (link.isMultiLink) {
+                return `
+                    <div class="link-item multi-link-item" data-link-id="${link.id}">
+                        <div class="link-content">
+                            <div class="link-icon">${link.icon}</div>
+                            <div class="link-text">
+                                <div class="link-title">${link.title}</div>
+                                ${link.description ? `<div class="link-description">${link.description}</div>` : ''}
+                                <div class="sub-links">
+                                    ${link.subLinks.map(subLink => `
+                                        <a href="${subLink.url}" class="sub-link-btn" target="_blank" rel="noopener noreferrer">
+                                            ${subLink.title}
+                                        </a>
+                                    `).join('')}
+                                </div>
+                                ${this.isAuthenticated && this.analytics[link.id] ? `<div class="link-stats">👆 ${this.analytics[link.id].clicks || 0} clicks</div>` : ''}
+                            </div>
+                        </div>
                     </div>
-                    <div class="link-arrow">→</div>
-                </div>
-            </a>
-        `).join('');
+                `;
+            } else {
+                return `
+                    <a href="${link.url}" class="link-item" target="_blank" rel="noopener noreferrer" data-link-id="${link.id}">
+                        <div class="link-content">
+                            <div class="link-icon">${link.icon}</div>
+                            <div class="link-text">
+                                <div class="link-title">${link.title}</div>
+                                ${link.description ? `<div class="link-description">${link.description}</div>` : ''}
+                                ${this.isAuthenticated && this.analytics[link.id] ? `<div class="link-stats">👆 ${this.analytics[link.id].clicks || 0} clicks</div>` : ''}
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </div>
+                    </a>
+                `;
+            }
+        }).join('');
 
         // Agregar animación escalonada
         const linkItems = container.querySelectorAll('.link-item');
@@ -522,9 +538,19 @@ LinkTreeManager.prototype.authenticateAdmin = function() {
 // Tracking de clicks
 LinkTreeManager.prototype.setupClickTracking = function() {
     document.addEventListener('click', (e) => {
-        const linkItem = e.target.closest('.link-item');
-        if (linkItem && linkItem.dataset.linkId) {
-            this.trackClick(linkItem.dataset.linkId);
+        // Track clicks en sub-links
+        if (e.target.classList.contains('sub-link-btn')) {
+            const linkItem = e.target.closest('.link-item');
+            if (linkItem && linkItem.dataset.linkId) {
+                this.trackClick(linkItem.dataset.linkId);
+            }
+        }
+        // Track clicks en enlaces normales
+        else {
+            const linkItem = e.target.closest('.link-item');
+            if (linkItem && linkItem.dataset.linkId && !linkItem.classList.contains('multi-link-item')) {
+                this.trackClick(linkItem.dataset.linkId);
+            }
         }
     });
 };
